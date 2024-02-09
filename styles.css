@@ -1,6 +1,7 @@
-body {
-    margin: 0;
-    background: lightblue;
-    text-align: center;
-
-}
+body { font-family: Arial, sans-serif; padding: 20px; }
+.container { max-width: 800px; margin: auto; }
+h1, h2 { color: #333; }
+p { line-height: 1.6; }
+.download-link { margin-top: 20px; }
+.download-link a { background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+.download-link a:hover { background-color: #0056b3; }
