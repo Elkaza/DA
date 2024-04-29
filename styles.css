@@ -83,3 +83,18 @@ footer {
         margin: 5px 0;
     }
 }
+
+#Abstract h2 {
+    font-size: 1.8em;
+    color: #444;
+}
+
+
+#thesis-cover {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#thesis-cover p {
+    font-weight: bold;
+}
