@@ -89,7 +89,6 @@ footer {
     color: #444;
 }
 
-
 #thesis-cover {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -98,7 +97,6 @@ footer {
 #thesis-cover p {
     font-weight: bold;
 }
-
 
 ul.research-questions {
     counter-reset: question-counter;  /* Create a new counter */
