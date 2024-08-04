@@ -84,35 +84,14 @@ footer {
     }
 }
 
-#Abstract h2 {
-    font-size: 1.8em;
-    color: #444;
-}
-
 #thesis-cover {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px 0;
 }
 
-#thesis-cover p {
-    font-weight: bold;
-}
-
-ul.research-questions {
-    counter-reset: question-counter;  /* Create a new counter */
-    list-style-type: none;           /* Remove default list styling */
-    padding-left: 0;                 /* Align text to the left */
-}
-
-ul.research-questions li {
-    counter-increment: question-counter; /* Increment counter for each list item */
-    margin-bottom: 8px;                  /* Add space between items */
-    font-size: 1.2em;                    /* Slightly smaller font size than the main text */
-}
-
-ul.research-questions li::before {
-    content: counter(question-counter) ". "; /* Display counter before the item content */
-    font-weight: bold;                        /* Bold the number */
-    color: #333;                              /* Set the color of the number */
-    margin-right: 5px;                        /* Space between the number and text */
+#wordcloud img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }

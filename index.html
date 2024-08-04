@@ -5,108 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thesis Presentation</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .screenshots {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .screenshots img {
+            width: 30%;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .screenshots img:hover {
+            transform: scale(1.05);
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>A Framework for Enterprise Coherence Governance During Organizational Transformation</h1>
-        <h2>State of Practice in Change and Transformation Management in Austria</h2>
-        <nav>
-            <ul>
-                <li><a href="#Abstract">Abstract</a></li>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#research-steps">Research Steps</a></li>
-                <li><a href="#state-of-research">State of Research</a></li>
-                <li><a href="#methodology">Methodology</a></li>
-                <li><a href="#data">Data</a></li>
-                <li><a href="#findings">Findings</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<header>
+    <h1>A Framework for Enterprise Coherence Governance During Organizational Transformation</h1>
+    <h2>State of Practice in Change and Transformation Management in Austria</h2>
+    <nav>
+        <ul>
+            <li><a href="#general-content">General Content</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="thesis.html">Master Thesis</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="general-content">
+        <h2>Idea</h2>
+        <p>The current job market indicates that there are many methods and frameworks used by various companies in different teams. However, the visibility of the use of a template or any framework to ensure coherence between all the different teams with their various methods and frameworks is not apparent. Therefore, this survey aims to investigate the current state of practice in Change and Transformation Management in Austria, with a focus on Coherence Governance During Organizational Transformation.</p>
+
+        <div class="screenshots">
+            <img src="screenshot1.png" alt="Screenshot 1" onclick="openModal('screenshot1.png')">
+            <img src="screenshot2.png" alt="Screenshot 2" onclick="openModal('screenshot2.png')">
+            <img src="screenshot3.png" alt="Screenshot 3" onclick="openModal('screenshot3.png')">
+        </div>
+    </section>
+        
+        
+        <p>This webpage provides an overview of the framework for enterprise coherence governance during organizational transformation, focusing on the state of practice in change and transformation management in Austria.</p>
+        <p>The detailed content of the thesis, including research steps, methodology, findings, and conclusions, can be accessed through the Master Thesis link above.</p>
+        <h2>Does coherence have the same importance as methods, frameworks, and tools during change and digital transformation?</h2>
+        <h2>Are the frameworks and methods required for IT jobs a limitation for collaboration and innovation, or do they facilitate them?</h2>
+        <p>Overview: A brief summary of the project idea and its importance.</p>
+        <section id="wordcloud">
+            <h3>Word Cloud of Digital Transformation Methods, Frameworks, and Tools</h3>
+            <img src="wordcloud.png" alt="Word Cloud of Digital Transformation Methods, Frameworks, and Tools">
+        </section>
+    </section>
+
+    <section id="survey">
+        <h2>Survey</h2>
+        <p>Please participate in our survey to help us understand the current state of digital transformation frameworks in Austrian enterprises.</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDuRNSTRKsRC8NpqAphMui4AvdvBwOLk1qrx5K01z6OjaXCw/viewform?embedded=true" width="640" height="2931" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <p><a href="https://forms.gle/e34iR1zdcTEyZFTq6" target="_blank">Click here to take the survey</a>.</p>
+    </section>
+
+    <section id="problem">
+        <h3>Problem Statement</h3>
+        <p>Background: Context for the problem being addressed.</p>
+        <p>Problem: Specific problem definition.</p>
+    </section>
     
-    <main>
-        <section id="thesis-cover">
-            <p><strong>DIPLOMA THESIS</strong></p>
-            <p><strong>To be submitted in partial fulfillment of the requirements for the degree of</strong></p> 
-            <p><strong> Diplom-Ingenieur in Business Informatics</strong></p>
-            <p><strong>by Mohamed Elkaza, BSc</strong></p>
-            <p><strong>Registration Number 01641175</strong></p>
-            <p><strong>to the Faculty of Informatics at the TU Wien</strong></p>
-            <p><strong>Advisor: Univ.Prof. Dr. Henderik Proper</strong></p>
-        </section>
+    <section id="solution">
+        <h3>Solution</h3>
+        <p>Description: Detailed explanation of the proposed solution.</p>
+        <p>Features: Key features of the solution.</p>
+    </section>
+    
+    <section id="implementation">
+        <h3>Implementation</h3>
+        <p>Methodology: Steps or methods for implementation.</p>
+        <p>Technologies: Technologies and tools used.</p>
+    </section>
+    
+    <section id="benefits">
+        <h3>Benefits</h3>
+        <p>Impact: Anticipated impact of the solution.</p>
+        <p>Advantages: Advantages over existing solutions.</p>
+    </section>
+    
+    <section id="use-cases">
+        <h3>Use Cases</h3>
+        <p>Scenarios: Examples of where the solution can be applied.</p>
+    </section>
+    
+    <section id="timeline">
+        <h3>Timeline</h3>
+        <p>Milestones: Key project milestones with dates.</p>
+    </section>
 
-        <section id="Abstract">
-            <h2>Abstract</h2>
-            <p>The objective of this thesis is to explore the general Methodological Landscape, with a specific focus on the Austrian industry. This research aims to collect controlled and concise data, capturing the landscape in Austria, examining its characteristics, and assessing the status of coherence within it.</p>
-            <p>To complement this study, data from job postings in the Austrian IT sector will be analyzed to identify the methods and frameworks mentioned in job descriptions. This analysis will help draw the current methodological landscape and will be supplemented with a survey targeted at companies based on the analysis. The findings will then be used to propose a framework designed to enhance coherence during organizational changes.</p>
-            <p>The importance of coherence throughout the transformation and change process is highlighted, demonstrating how it can benefit both the process itself and its stakeholders. The harmony of the transformation and change process is as crucial as the ingredients in the recipe of the process.</p>
-        </section>
+    <section id="people">
+        <h2>People</h2>
+        <div class="person">
+            <h3>Mohamed Elkaza, BSc</h3>
+            <p>Role: Student</p>
+            <p>Mohamed is a change and transformation enthusiast with a passion for innovation, technology, and collaboration.</p>
+        </div>
+        <div class="person">
+            <h3>Univ.Prof. Dr. Henderik Proper</h3>
+            <p>Role: Supervisor</p>
+            <p>Prof. Dr. Henderik A. Proper is a Full Professor in Enterprise and Process Engineering in the Business Informatics Group at the TU Wien.</p>
+            <p><a href="https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/248458" target="_blank">TU Wien Profile</a></p>
+            <p><a href="https://www.erikproper.eu/" target="_blank">Personal Website</a></p>
+            <p>Email: <a href="mailto:henderik.proper@tuwien.ac.at">henderik.proper@tuwien.ac.at</a></p>
+        </div>
+        <div class="person">
+            <h3>Univ.Lektorin Mag.a Jutta Jerlich</h3>
+            <p>Role: Supervisor</p>
+            <p>With a quarter century of experience in Product / Business Development and Innovation working with leading experts and companies in an international arena, I have always been a translator of strategic requirements and market realities into product and service features by using the right technology to build ecosystem business models.</p>
+            <p>In the course of developing technology education and programs my passion lies in using technology as a lever for positive change and societal impact. I initiated countless projects and collaborated with organisations and experts from different backgrounds, cultures and countries in diverse roles in innovation, communication, strategy and program management. Mentoring is always part of my role as University Educator for Creativity und Leadership. Having spent several years abroad, among the countries Japan, the USA and India have paved my way in so many aspects.</p>
+            <p>No theory can prepare you for reality. That is why my programs are an experience. I believe that humans are made to collaborate and co-create. As an engineer never works alone, bringing the skill to bring diverse parties together in order to jointly produce a mutually valued outcome is crucial for success. Integrating self-reflection and feedback from peers into team work processes needs to become a routine enabling everyone to bring their best to the equation. My courses give participants the opportunity to put their ideas on the workbench and develop them collaboratively.</p>
+            <p><a href="https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/44513" target="_blank">TU Wien Profile</a></p>
+            <p>Email: <a href="mailto:jutta.jerlich@tuwien.ac.at">jutta.jerlich@tuwien.ac.at</a></p>
+        </div>
+    </section>
+</main>
 
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>In today's rapidly evolving technological landscape, organizations, especially those in the IT sector, face a myriad of challenges. Adapting to innovations such as artificial intelligence, the Internet of Things, and big data is crucial. Historical examples of industry adaptation failures, like Nokia's in 2010, underscore the necessity of skillful change and transformation management. Companies are constantly adopting new management methods, yet often they fail to achieve their broader goals, indicating uncertainty in their current approaches. This research aims to map the current methodological landscape with a focus on coherence.</p>
-        </section>
+<footer>
+    <p>© 2024 by the Author. All rights reserved.</p>
+</footer>
 
-        <section id="research-steps">
-            <h2>Research Steps:</h2>
-            <section id="Problem statement">
-                <h3>1. Problem statement</h3>
-                <p>Change and transformation in enterprises are a major way to overcome the rapidly changing environment in business but over time different approaches emerge to the surface with their methods and frameworks bringing different tools and sub tools all can be observed in many enterprises depending on the sizes and the organizational structure, for instance, some have a parent company and subsidiaries all of which have their freedom somehow on how to accomplish tasks and deliver services as the preference is varying depending on the people preferences.</p>
-                <p>Continuous problems require continuous solutions, but when the problem is divided into smaller problems with smaller solutions, there is a need to make sure all of these solutions are working together somehow.</p>
-                <!-- More paragraphs as needed -->
-            </section>
-            
-            <h3>2. Research Questions</h3>
-            <ul class="research-questions">
-                <li>How does the methodological landscape of enterprise transformation appear within the Austrian industry?</li>
-                <li>What are the various disciplines involved in enterprise change management, and how do they intersect and overlap?</li>
-                <li>How can these disciplines be cohesively managed to support enterprise transformation?</li>
-            </ul>
-            
-            <section id="methodology">
-                <h3>3. Methodology</h3>
-                <p>Description of the methodology used in the research...</p>
-            </section>
+<script>
+    function openModal(src) {
+        document.getElementById('myModal').style.display = "block";
+        document.getElementById('modal-img').src = src;
+    }
 
-            <section id="state-of-research">
-                <h3>4. State of Research on Coherence during Change and Digital Transformation</h3>
-                <section id="the-current-methodological-landscape">
-                    <h4>4.1 Mindmap of the Current Methodological Landscape</h4>
-                    <iframe src="markmap.html" style="width:100%; height:500px;" frameborder="0"></iframe>
-                </section>
-            
-                <section id="the-current-methodological-landscape-in-austria">
-                    <h4>4.2 The Current Methodological Landscape of Enterprise Transformation in Austria</h4>
-                    <!-- Content for The Current Methodological Landscape in Austria here -->
-                </section>
-            </section>
-
-            <section id="data">
-                <h3>5. Data</h3>
-                <p>Information about the data collected for the research...</p>
-                <section id="analysis-of-job-posting-data-in-austria">
-                    <h4>5.1 Analysis of Job Posting Data in Austria</h4>
-                    <!-- Content for Analysis of Job Posting Data in Austria here -->
-                </section>
-            
-                <section id="survey-on-methodological-practices-in-austrian-enterprises">
-                    <h4>5.2 Survey on Methodological Practices in Austrian Enterprises</h4>
-                    <p>Please participate in our survey to help us understand the current state of digital transformation frameworks in Austrian enterprises. <a href="https://forms.gle/e34iR1zdcTEyZFTq6" target="_blank">Click here to take the survey</a>.</p>
-                </section>
-            </section>
-                   
-            <section id="findings">
-                <h2>6. Findings</h2>
-                <p>Summary of the findings from the research...</p>
-            </section>
-            
-            <section id="conclusion">
-                <h2>7. Conclusion</h2>
-                <p>Concluding thoughts and implications of the research...</p>
-            </section>
-        </section>
-    </main>
-    <footer><p>© 2024 by the Author. All rights reserved.</p></footer>
-    <script src="thesis-enhancements.js"></script>
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+</script>
 </body>
 </html>
