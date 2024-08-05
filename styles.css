@@ -156,17 +156,36 @@ footer {
     cursor: pointer;
 }
 
-.model img {
-    max-width: 40%; /* Adjusted to make the image smaller */
-    display: block;
-    margin: 20px auto;
+/* Navigation buttons */
+.prev, .next {
     cursor: pointer;
-    transition: transform 0.2s;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.model img:hover {
-    transform: scale(1.05);
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
 
 /* Reduce space between survey iframe and the link */
 #survey iframe {
