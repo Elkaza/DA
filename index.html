@@ -5,56 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thesis Presentation</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .screenshots {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .screenshots img {
-            width: 30%;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .screenshots img:hover {
-            transform: scale(1.05);
-        }
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 60px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.9);
-        }
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
 
@@ -72,23 +22,8 @@
 
 <main>
     <section id="general-content">
-        <h2>Why?</h2>
-
-        <section id="wordcloud">
-            <h3>The current methodological landscape in the industry has become a cloud of digital transformation methods, frameworks, and tools.</h3>
-            <img src="wordcloud.png" alt="Word Cloud of Digital Transformation Methods, Frameworks, and Tools">
-        </section>
-
-
-        <p>The current job market indicates that there are many methods and frameworks used by 
-            various companies in different teams. However, the visibility of the use of a template 
-            or any framework to ensure coherence between all the different teams with their various
-             methods and frameworks is not apparent. Therefore, 
-             this <a href="https://forms.gle/e34iR1zdcTEyZFTq6" target="_blank">survey</a> aims 
-             to investigate the current state of practice in Change and Transformation Management 
-             in Austria, with a focus on Coherence Governance During Organizational 
-             Transformation.</p>
-
+        <h2>Idea</h2>
+        <p>The current job market indicates that there are many methods and frameworks used by various companies in different teams. However, the visibility of the use of a template or any framework to ensure coherence between all the different teams with their various methods and frameworks is not apparent. Therefore, this <a href="https://forms.gle/e34iR1zdcTEyZFTq6" target="_blank">survey</a> aims to investigate the current state of practice in Change and Transformation Management in Austria, with a focus on Coherence Governance During Organizational Transformation.</p>
 
         <div class="screenshots">
             <img src="screenshot1.png" alt="Screenshot 1" onclick="openModal('screenshot1.png')">
@@ -97,13 +32,28 @@
         </div>
     </section>
         
+    <p>This webpage provides an overview of the framework for enterprise coherence governance during organizational transformation, focusing on the state of practice in change and transformation management in Austria.</p>
+    <p>The detailed content of the thesis, including research steps, methodology, findings, and conclusions, can be accessed through the Master Thesis link above.</p>
+    <h2>Does coherence have the same importance as methods, frameworks, and tools during change and digital transformation?</h2>
+    <h2>Are the frameworks and methods required for IT jobs a limitation for collaboration and innovation, or do they facilitate them?</h2>
+    <p>Overview: A brief summary of the project idea and its importance.</p>
+    <section id="wordcloud">
+        <h3>The current methodological landscape in the industry has become a cloud of digital transformation methods, frameworks, and tools.</h3>
+        <img src="wordcloud.png" alt="Word Cloud of Digital Transformation Methods, Frameworks, and Tools">
+    </section>
     
+    <section id="How">
+        <h3>Research Model</h3>
+        <p>By following this research model:</p>
+        <div class="model">
+            <img src="research_model.png" alt="Research Model 1" onclick="openModal('research_model.png')">
+        </div>
+    </section>
 
-
-    <section id="Survey">
-        <h2><a href="https://forms.gle/e34iR1zdcTEyZFTq6" target="_blank">survey</a></h2>
+    <section id="survey">
+        <h2>Survey</h2>
         <p>Please participate in our survey to help us understand the current state of digital transformation frameworks in Austrian enterprises.</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDuRNSTRKsRC8NpqAphMui4AvdvBwOLk1qrx5K01z6OjaXCw/viewform?embedded=true" width="640" height="2931" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDuRNSTRKsRC8NpqAphMui4AvdvBwOLk1qrx5K01z6OjaXCw/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         <p><a href="https://forms.gle/e34iR1zdcTEyZFTq6" target="_blank">Click here to take the survey</a>.</p>
     </section>
 
@@ -117,76 +67,4 @@
         <h3>Solution</h3>
         <p>Description: Detailed explanation of the proposed solution.</p>
         <p>Features: Key features of the solution.</p>
-    </section>
-    
-    <section id="implementation">
-        <h3>Implementation</h3>
-        <p>Methodology: Steps or methods for implementation.</p>
-        <p>Technologies: Technologies and tools used.</p>
-    </section>
-    
-    <section id="benefits">
-        <h3>Benefits</h3>
-        <p>Impact: Anticipated impact of the solution.</p>
-        <p>Advantages: Advantages over existing solutions.</p>
-    </section>
-    
-    <section id="use-cases">
-        <h3>Use Cases</h3>
-        <p>Scenarios: Examples of where the solution can be applied.</p>
-    </section>
-    
-    <section id="timeline">
-        <h3>Timeline</h3>
-        <p>Milestones: Key project milestones with dates.</p>
-    </section>
-
-    <section id="people">
-        <h2>People</h2>
-        <div class="person">
-            <h3>Mohamed Elkaza, BSc</h3>
-            <p>Role: Student</p>
-            <p>Mohamed is a change and transformation enthusiast with a passion for innovation, technology, and collaboration.</p>
-        </div>
-        <div class="person">
-            <h3>Univ.Prof. Dr. Henderik Proper</h3>
-            <p>Role: Supervisor</p>
-            <p>Prof. Dr. Henderik A. Proper is a Full Professor in Enterprise and Process Engineering in the Business Informatics Group at the TU Wien.</p>
-            <p><a href="https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/248458" target="_blank">TU Wien Profile</a></p>
-            <p><a href="https://www.erikproper.eu/" target="_blank">Personal Website</a></p>
-            <p>Email: <a href="mailto:henderik.proper@tuwien.ac.at">henderik.proper@tuwien.ac.at</a></p>
-        </div>
-        <div class="person">
-            <h3>Univ.Lektorin Mag.a Jutta Jerlich</h3>
-            <p>Role: Supervisor</p>
-            <p>With a quarter century of experience in Product / Business Development and Innovation working with leading experts and companies in an international arena, I have always been a translator of strategic requirements and market realities into product and service features by using the right technology to build ecosystem business models.</p>
-            <p>In the course of developing technology education and programs my passion lies in using technology as a lever for positive change and societal impact. I initiated countless projects and collaborated with organisations and experts from different backgrounds, cultures and countries in diverse roles in innovation, communication, strategy and program management. Mentoring is always part of my role as University Educator for Creativity und Leadership. Having spent several years abroad, among the countries Japan, the USA and India have paved my way in so many aspects.</p>
-            <p>No theory can prepare you for reality. That is why my programs are an experience. I believe that humans are made to collaborate and co-create. As an engineer never works alone, bringing the skill to bring diverse parties together in order to jointly produce a mutually valued outcome is crucial for success. Integrating self-reflection and feedback from peers into team work processes needs to become a routine enabling everyone to bring their best to the equation. My courses give participants the opportunity to put their ideas on the workbench and develop them collaboratively.</p>
-            <p><a href="https://tiss.tuwien.ac.at/adressbuch/adressbuch/person/44513" target="_blank">TU Wien Profile</a></p>
-            <p>Email: <a href="mailto:jutta.jerlich@tuwien.ac.at">jutta.jerlich@tuwien.ac.at</a></p>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>© 2024 by the Author. All rights reserved.</p>
-</footer>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modal-img">
-</div>
-
-<script>
-    function openModal(src) {
-        document.getElementById('myModal').style.display = "block";
-        document.getElementById('modal-img').src = src;
-    }
-
-    function closeModal() {
-        document.getElementById('myModal').style.display = "none";
-    }
-</script>
-</body>
-</html>
+    </
